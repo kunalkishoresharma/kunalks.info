@@ -1,0 +1,15 @@
+requirejs.config({
+    baseUrl:'js',
+    paths:{
+        jquery:[
+            'http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min',
+            'lib/jquery-1.10.2.min'
+        ],        
+        migrate:'lib/jquery-migrate-1.2.1.min',
+        fittext:'lib/jquery.fittext',
+        flexslider:'lib/jquery.flexslider',
+        magnific:'lib/magnific-popup',
+        modernizr:'lib/modernizr',
+        waypoints:'lib/waypoints'
+    }
+})
