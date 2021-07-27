@@ -22,7 +22,8 @@
           width: '640',
           videoId: 'M7lc1UVf-VE',
           playerVars: {
-            'playsinline': 1
+            'playsinline': 0,
+            'origin': 'kunalks.info'
           },
           events: {
             'onReady': onPlayerReady,
@@ -48,7 +49,15 @@
       }
       function stopVideo() {
         player.stopVideo();
+        player.style.opacity=0.2
+
       }
     </script>
+    <style>
+        iframe .html5-video-player .video-stream{
+            top: 0!important;
+        }
+    </style>
+    <iframe src="https://www.youtube.com/embed/M7lc1UVf-VE?playsinline=0&origin=http%3A%2F%2F127.0.0.1%3A5500&enablejsapi=1&widgetid=1" tabindex="-1">
   </body>
 </html>
