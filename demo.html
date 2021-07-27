@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <body>
-      <h1>Hello Worldss</h1>
+      <h1>Hello World1</h1>
     <!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
-    <div id="player"></div>
+    <div id="players"></div>
 
     <script>
       // 2. This code loads the IFrame Player API code asynchronously.
@@ -17,7 +17,7 @@
       //    after the API code downloads.
       var player;
       function onYouTubeIframeAPIReady() {
-        player = new YT.Player('player', {
+        player = new YT.Player('players', {
           height: '390',
           width: '640',
           videoId: 'M7lc1UVf-VE',
@@ -49,16 +49,16 @@
       }
       function stopVideo() {
         player.stopVideo();
-        player.style.opacity=0.2
-
       }
     </script>
     <style>
         iframe .html5-video-player .video-stream{
             top: 0!important;
         }
+        #div{
+            position: absolute;
+        }
     </style>
-    <hr><br>
-    <iframe src="https://www.youtube.com/embed/M7lc1UVf-VE?playsinline=0&origin=http%3A%2F%2F127.0.0.1%3A5500&enablejsapi=1&widgetid=1" tabindex="1" inert="true">
+    <iframe src="https://www.youtube.com/embed/M7lc1UVf-VE?playsinline=0&origin=http%3A%2F%2F127.0.0.1%3A5500&enablejsapi=1&widgetid=1" id="div" tabindex="-1">
   </body>
 </html>
